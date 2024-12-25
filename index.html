@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Lindsey!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday To the most AMAZING girl ever, Lindsey!</h1>
+        <img src="Screenshot 2024-12-25 173757.png" alt="Lindsey" class="profile-pic">
+        
+        <p id="message" class="message" style="display:none;">"I love you so much! You're the best thing that ever happened to me. Have the best birthday! 
+            I just want you to know that I am very proud of you, and I will be here with you forever and ever. I love youuuuuuu!"
+        </p>
+        
+        <button class="play-button" onclick="playAudio()">Play Birthday Song</button>
+        
+        <audio id="birthday-audio">
+            <source src="hi.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("birthday-audio");
+            var message = document.getElementById("message");
+
+            audio.play();  // Play the audio
+
+            // Show the message after the button is clicked
+            message.style.display = "block";
+        }
+    </script>
+</body>
+</html>
